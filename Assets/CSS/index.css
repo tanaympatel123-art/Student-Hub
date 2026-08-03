@@ -1,0 +1,30 @@
+
+/* Welcome Section Accent */
+main section h2 {
+    border-bottom: 2px solid #1abc9c;
+    padding-bottom: 6px;
+}
+
+/* Objectives & Highlights List Enhancements */
+main section ul, main section ol {
+    margin-top: 12px;
+}
+
+main section ul li, main section ol li {
+    padding: 6px 10px;
+    margin-bottom: 6px;
+    background-color: #f8f9fa;
+    border-left: 4px solid #3498db;
+    border-radius: 4px;
+}
+
+/* Latest Announcements Sidebar List */
+aside ul li {
+    padding: 6px 0;
+    border-bottom: 1px dashed #b3d4fc;
+    font-size: 14px;
+}
+
+aside ul li:last-child {
+    border-bottom: none;
+}

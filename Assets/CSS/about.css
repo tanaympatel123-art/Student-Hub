@@ -1,0 +1,52 @@
+
+
+#about-overview p {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.feature-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 15px;
+}
+
+.feature-list li {
+    padding: 10px 12px;
+    margin-bottom: 8px;
+    background-color: #f8f9fa;
+    border-left: 4px solid #1abc9c;
+    border-radius: 4px;
+}
+
+.feature-list strong {
+    color: #2c3e50;
+}
+
+/* Quick Facts Description Grid */
+.facts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.facts-grid div {
+    background-color: #ffffff;
+    padding: 10px 14px;
+    border-radius: 6px;
+    border: 1px solid #dcdcdc;
+}
+
+.facts-grid dt {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #2980b9;
+    font-weight: bold;
+}
+
+.facts-grid dd {
+    font-size: 14px;
+    color: #333;
+    margin-top: 2px;
+}

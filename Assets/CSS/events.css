@@ -1,0 +1,40 @@
+
+/* Event Card Articles */
+article {
+    background-color: #f8f9fa;
+    border: 1px solid #e0e0e0;
+    border-left: 4px solid #1abc9c;
+    border-radius: 6px;
+    padding: 16px;
+    margin-bottom: 15px;
+}
+
+article h3 {
+    color: #2c3e50;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Event Detail Lists inside Articles */
+article ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+}
+
+article ul li {
+    padding: 4px 0;
+    color: #555;
+    font-size: 14px;
+    border-bottom: 1px dashed #e0e0e0;
+}
+
+article ul li:last-child {
+    border-bottom: none;
+}
+
+/* Guidelines Sidebar */
+aside ul li {
+    margin-bottom: 8px;
+    font-size: 14px;
+}

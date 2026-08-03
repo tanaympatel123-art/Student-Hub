@@ -1,0 +1,48 @@
+
+/* Dashboard Modules List */
+main section ul {
+    list-style: none;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+}
+
+main section ul li {
+    background-color: #f8f9fa;
+    padding: 12px 15px;
+    border-left: 4px solid #1abc9c;
+    border-radius: 4px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* Recent Announcements Cards (<article>) */
+article {
+    background-color: #f8f9fa;
+    border: 1px solid #e0e0e0;
+    border-left: 4px solid #3498db;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 12px;
+}
+
+article h3 {
+    color: #2c3e50;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+article p {
+    color: #555;
+    font-size: 14px;
+}
+
+/* Quick Links in Sidebar */
+aside ul li {
+    margin-bottom: 8px;
+}
+
+aside ul li a {
+    font-weight: bold;
+}

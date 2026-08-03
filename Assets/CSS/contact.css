@@ -1,0 +1,75 @@
+
+
+/* Form Grouping & Spacing */
+.contact-form p {
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    font-weight: bold;
+    color: #2c3e50;
+    font-size: 14px;
+}
+
+/* Inputs & Textarea Styling */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+/* Submit & Reset Buttons */
+.contact-form input[type="submit"],
+.contact-form input[type="reset"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #1abc9c;
+    color: #ffffff;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #16a085;
+}
+
+.contact-form input[type="reset"] {
+    background-color: #e74c3c;
+    color: #ffffff;
+}
+
+.contact-form input[type="reset"]:hover {
+    background-color: #c0392b;
+}
+
+/* Office Address Display */
+address {
+    font-style: normal;
+    line-height: 1.8;
+    color: #555;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-left: 4px solid #1abc9c;
+    border-radius: 4px;
+}
