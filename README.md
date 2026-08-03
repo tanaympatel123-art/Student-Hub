@@ -1,124 +1,94 @@
-````markdown
 # StudentHub
 
-## Overview
+> A semantic, accessibility-first web portal built as a semester project for the ICT Workshop course at **DEPSTAR, CHARUSAT University**.
 
-**StudentHub** is a web-based student portal developed as a semester-long project for the ICT Workshop course. The portal provides students with a centralized platform to access important information such as registration, login, personal profiles, events, contact details, frequently asked questions, and feedback services.
-
-The current version focuses on building a semantic and accessibility-friendly HTML5 website structure that will be enhanced with CSS, JavaScript, and backend technologies in future practicals.
-
----
-
-# Requirement Analysis
-
-## Problem Statement
-
-Students often need a single platform to access important college-related information and services. StudentHub aims to provide an organized web portal where students can register, log in, view information, explore events, manage their profile, contact the administration, and submit feedback through a simple and user-friendly interface.
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![VSCode](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
 ---
 
-## Project Scope
+##  Project Overview
 
-The scope of this project is to develop a static StudentHub portal using HTML5 semantic elements. The project includes multiple interconnected web pages with consistent navigation and accessibility-friendly design. Future practicals will add styling, interactivity, and backend functionality.
+**StudentHub** is an all-in-one web portal designed to streamline campus communication and academic services into a single, centralized platform. It allows students to manage their personal profiles, register for portal access, view campus events, contact university administration, and submit feedback.
 
----
-
-## Functional Requirements
-
-- Home page
-- About page
-- Student registration
-- Student login
-- Student dashboard
-- Student profile
-- Events page
-- Contact page
-- Admin panel
-- FAQ page
-- Feedback page
-- Navigation between all pages
-- Semantic HTML5 structure
-- Accessibility-ready forms and navigation
+The initial phase focuses on constructing a clean, semantic HTML5 foundation paired with modular CSS3 layouts to ensure broad accessibility standards.
 
 ---
 
-## Non-Functional Requirements
+##  Requirement Analysis
 
-- Easy to navigate
-- Simple user interface
-- Semantic HTML5 elements
-- Accessibility-friendly design
-- Consistent page layout
-- Organized folder structure
-- Git and GitHub version control
-- Maintainable project structure
+###  Problem Statement
+Students frequently deal with fragmented communication channels across institutional portals. **StudentHub** solves this by consolidating academic updates, registration systems, contact support, and administrative tools into a single, accessible user interface.
+
+### 📐 Project Scope
+* **Phase 1 (Current):** Semantic HTML5 page layout, structured navigation, modular CSS file architecture (`assets/css/`), and responsive design.
+* **Future Expansion:** Client-side validation using JavaScript, DOM manipulation, and dynamic backend database integration.
 
 ---
 
-# Modules / Pages
+##  Features & Functional Requirements
 
-- Home
-- About
-- Register
-- Login
-- Dashboard
-- Events
-- Profile
-- Contact
-- Admin
-- FAQ
-- Feedback
+| Module / Page | Primary Function |
+| :--- | :--- |
+| **Home (`index.html`)** | Landing page with overview and portal highlights. |
+| **About** | Purpose, institutional mission, and core system goals. |
+| **Register & Login** | User onboarding, authentication forms, and access control. |
+| **Dashboard** | Quick action grid, recent announcements, and course activity. |
+| **Profile** | Key-value display of personal details, student ID, and attendance. |
+| **Events** | Upcoming technical, sports, and cultural campus events. |
+| **Contact & Admin** | Support requests, institutional address, and administrative management. |
+| **FAQ & Feedback** | Frequently asked questions and feedback submission form. |
 
----
-
-# User Roles
-
-## Student
-
-- Register for StudentHub
-- Login to the portal
-- View dashboard
-- Access profile information
-- View upcoming events
-- Contact the administration
-- Submit feedback
-- Read frequently asked questions
+###  Non-Functional Requirements
+* **Semantic HTML5:** Strict utilization of `<header>`, `<nav>`, `<main>`, `<section>`, `<aside>`, and `<footer>`.
+* **Accessibility (a11y):** Form fields paired with explicit `<label>` bindings, keyboard nav support, and proper ARIA attributes.
+* **Modular Architecture:** Page-specific styling rules isolated inside `assets/css/`.
 
 ---
 
-## Administrator
+##  User Roles
 
-- Manage portal information
-- Review student feedback
-- Update announcements
-- Monitor portal activities
-- Manage student accounts
+###  Student
+* Register for a new account & securely log in.
+* View personal academic progress on the **Dashboard** & **Profile**.
+* Explore upcoming campus activities on the **Events** page.
+* Submit suggestions via **Feedback** and contact university admins.
 
----
-
-# Technologies Used
-
-- HTML5
-- Visual Studio Code
-- Git
-- GitHub
+###  Administrator
+* Monitor portal statistics and account registrations.
+* Review incoming student feedback and support inquiries.
+* Update campus announcements and event notices.
 
 ---
 
-# Project Structure
+##  Directory Structure
 
 ```text
 StudentHub/
 │
 ├── assets/
 │   ├── css/
-│   ├── js/
-│   ├── images/
-│   └── fonts/
+│   │   ├── global.css        # Base reset, layout, navigation & footer styles
+│   │   ├── index.css         # Home page custom layout
+│   │   ├── about.css         # Feature lists & facts grids
+│   │   ├── register.css      # Registration form control styles
+│   │   ├── login.css         # Auth form styles
+│   │   ├── dashboard.css     # Module grids & notice cards
+│   │   ├── events.css        # Event card layout
+│   │   ├── profile.css       # Data display grids
+│   │   ├── contact.css       # Support form layout
+│   │   ├── admin.css         # System stats grid
+│   │   ├── faq.css           # Accordion / question cards
+│   │   └── feedback.css      # Survey form controls
+│   ├── js/                   # Future script assets
+│   ├── images/               # Graphic assets
+│   └── fonts/                # Web fonts
 │
-├── docs/
+├── docs/                     # Course documentation & project reports
 │
-├── pages/
+├── pages/                    # Subpages directory
 │   ├── about.html
 │   ├── register.html
 │   ├── login.html
@@ -130,38 +100,5 @@ StudentHub/
 │   ├── faq.html
 │   └── feedback.html
 │
-├── index.html
-└── README.md
-```
-
----
-
-# Navigation Flow
-
-```text
-Home
-│
-├── About
-├── Register
-├── Login
-├── Dashboard
-│     ├── Profile
-│     ├── Events
-│     ├── Contact
-│     └── Feedback
-│
-├── Admin
-├── FAQ
-└── Contact
-```
-
----
-
-# Author
-
-**Tanay Patel**
-
-B.Tech Computer Engineering
-
-DEPSTAR, CHARUSAT University
-````
+├── index.html                # Root landing page
+└── README.md                 # Project documentation
