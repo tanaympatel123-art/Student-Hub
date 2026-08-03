@@ -22,7 +22,7 @@ The initial phase focuses on constructing a clean, semantic HTML5 foundation pai
 ###  Problem Statement
 Students frequently deal with fragmented communication channels across institutional portals. **StudentHub** solves this by consolidating academic updates, registration systems, contact support, and administrative tools into a single, accessible user interface.
 
-### 📐 Project Scope
+###  Project Scope
 * **Phase 1 (Current):** Semantic HTML5 page layout, structured navigation, modular CSS file architecture (`assets/css/`), and responsive design.
 * **Future Expansion:** Client-side validation using JavaScript, DOM manipulation, and dynamic backend database integration.
 
