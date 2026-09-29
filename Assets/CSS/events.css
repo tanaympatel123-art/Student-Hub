@@ -38,3 +38,248 @@ aside ul li {
     margin-bottom: 8px;
     font-size: 14px;
 }
+
+/* Modal */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+    background-color: white;
+    width: 400px;
+    max-width: 90%;
+    margin: 10% auto;
+    padding: 25px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.close-modal {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 25px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.view-details {
+    cursor: pointer;
+}
+
+/* ============================= */
+/* Event Image Slider */
+/* ============================= */
+
+.event-slider-section {
+    margin: 30px auto;
+    text-align: center;
+    max-width: 800px;
+}
+
+
+.event-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+
+.slide-content {
+    width: 650px;
+    max-width: 80%;
+    text-align: center;
+}
+
+
+#sliderImage {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+
+
+#sliderTitle {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+
+#sliderDescription {
+    margin-top: 5px;
+}
+
+
+.slider-button {
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    background-color: #2c3e50;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+.slider-button:hover {
+    background-color: #3498db;
+}
+
+
+/* ============================= */
+/* Event Modal */
+/* ============================= */
+
+.modal {
+    display: none;
+
+    position: fixed;
+
+    z-index: 1000;
+
+    left: 0;
+
+    top: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+.modal-content {
+    background-color: white;
+
+    width: 400px;
+
+    max-width: 90%;
+
+    margin: 10% auto;
+
+    padding: 25px;
+
+    border-radius: 8px;
+
+    position: relative;
+}
+
+
+.close-modal {
+    position: absolute;
+
+    right: 15px;
+
+    top: 10px;
+
+    font-size: 25px;
+
+    border: none;
+
+    background: none;
+
+    cursor: pointer;
+}
+
+
+.view-details {
+    cursor: pointer;
+}
+
+/* ============================= */
+/* Notification Banner */
+/* ============================= */
+
+.notification-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #3498db;
+
+    color: white;
+
+    padding: 15px 20px;
+
+    margin: 20px auto;
+
+    max-width: 900px;
+
+    border-radius: 6px;
+}
+
+
+.notification-banner p {
+    margin: 0;
+}
+
+
+#closeNotification {
+    background: none;
+
+    border: none;
+
+    color: white;
+
+    font-size: 25px;
+
+    cursor: pointer;
+
+    padding: 0 5px;
+}
+
+
+#closeNotification:hover {
+    color: #ecf0f1;
+}
+
+/* ============================= */
+/* Hamburger Menu */
+/* ============================= */
+
+.menu-button {
+    display: block;
+
+    background-color: #2c3e50;
+
+    color: white;
+
+    border: none;
+
+    padding: 10px 15px;
+
+    font-size: 25px;
+
+    cursor: pointer;
+
+    margin: 10px;
+}
+
+
+.menu-button:hover {
+    background-color: #3498db;
+}
+
+
+#mainNav {
+    display: block;
+}
+
+
+#mainNav.menu-hidden {
+    display: none;
+}

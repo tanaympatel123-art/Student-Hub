@@ -1,0 +1,153 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    line-height:1.6;
+    background-color:#f4f4f9;
+    color:#333;
+}
+
+header{
+    background-color:#2c3e50;
+    color:#ffffff;
+    text-align:center;
+    padding:20px;
+}
+
+header hr{
+    display:none;/*Hides the raw HTML line tag so we can use CSS styling instead*/
+}
+
+nav{
+    background-color:#ecf0f1;
+    padding:15px;
+}
+
+nav h2{
+    color:#2c3e50;
+    font-size:18px;
+    margin-bottom:10px;
+    text-align:center;
+}
+
+nav ul{
+    list-style:none;/*Removes the default bulletpoints.*/
+    display:flex;
+    flex-direction:column;/*Stacks the links vertically*/
+    gap:10px;/*Adds space between each link*/
+    align-items:center;
+}
+
+nav a{
+    color:#333;
+    text-decoration:none;/*Remove the default underline*/
+    padding:8px 15px;
+    border-radius:4px;
+    transition:background-color 0.3s;/*smooth transition effect*/
+}
+
+nav a:hover{
+    background-color:#1abc9c;/*change background color when you hover over a link*/
+}
+
+nav hr{
+    display:none;
+}
+
+main {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto; /* Centers the main content on the screen */
+}
+
+main section {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+main section h2 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+main section p, main section li {
+    color: #555;
+    font-size: 15px;
+}
+
+main section ul, main section ol {
+    padding-left: 20px; /* Indents list items nicely */
+    margin-top: 10px;
+}
+
+aside {
+    background-color: #e8f4f8;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border-left: 4px solid #3498db;
+}
+
+aside h2 {
+    color: #2980b9;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 40px;
+}
+
+footer address {
+    font-style: normal;
+    margin-bottom: 10px;
+    color: #bdc3c7;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #ecf0f1;
+}
+
+@media (min-width: 768px) {
+    /* Changes the navigation links from a vertical column to a horizontal row */
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+/*Form Layout and Styling*/
+
+.auth-form{
+    display:flex;
+    flex-direction:column;/*Spaces out each form group*/
+    gap:15px;
+    margin-top:20px;
+}
+
+.form-group{
+    display:flex;
+    flex-direction:column;/* Stacks label on top of input for mobile-first */
+    gap:5px;
+}
+
+.auth-form label{
+    font-weight:bold;
+    font-size:14px;
+    color:#2c3e50;
+}

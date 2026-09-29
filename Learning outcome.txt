@@ -1,0 +1,8 @@
+Learning Outcomes:
+
+1. '*'-(selector) universal selector che aa specify kare ke badha html tag par aa apply karvanu
+2. 'margin'(property)-objects vacche ni jagya ne specify kare ahi object etle 2 vastu aaju baju object ni jagya hoi te (Sets all the margin properties in one declaration)
+3. 'padding'-object je che eni andar ketli space hashe e decide kare
+4. 'box-sizing:border-box' - aapde ketli pan padding vagera mukye total size change na thavo joi e
+5. 'font-family:Arial, Helvetica, sans-serif' - body tag ma font select thashe ariel,helvetica,sans serif na order ma
+6. 'line-height:1.6' - 

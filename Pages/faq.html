@@ -22,78 +22,112 @@
 
     </header>
 
-    <nav aria-label="Main Navigation">
+    <button type="button"
+        id="menuButton"
+        class="menu-button"
+        aria-label="Open navigation menu">
+    ☰
+</button>
 
-        <h2>Navigation</h2>
+<nav id="mainNav" aria-label="Main Navigation">
 
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="register.html">Register</a></li>
-            <li><a href="login.html">Login</a></li>
-            <li><a href="dashboard.html">Dashboard</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="profile.html">Profile</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="admin.html">Admin</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="feedback.html">Feedback</a></li>
-        </ul>
+    <h2>Navigation</h2>
 
-        <hr>
+    <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="admin.html">Admin</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+    </ul>
 
-    </nav>
+    <hr>
+
+</nav>
 
     <main>
+        <button type="button" id="themeButton" class="theme-button" aria-label="Toggle dark mode">
+    🌙 Dark Mode
+</button>
 
         <section>
 
             <h2>General Questions</h2>
 
+            <!-- FAQ 1 -->
             <article>
 
-                <h3>1. What is StudentHub?</h3>
+                <button type="button" class="faq-question">
+                    1. What is StudentHub?
+                </button>
 
-                <p>
-                    StudentHub is an online portal that provides students with
-                    access to important academic and campus-related information.
-                </p>
+                <div class="faq-answer">
+                    <p>
+                        StudentHub is an online portal that provides students with
+                        access to important academic and campus-related information.
+                    </p>
+                </div>
 
             </article>
 
+
+            <!-- FAQ 2 -->
             <article>
 
-                <h3>2. How can I register?</h3>
+                <button type="button" class="faq-question">
+                    2. How can I register?
+                </button>
 
-                <p>
-                    Visit the Register page, fill in the required details, and
-                    submit the registration form.
-                </p>
+                <div class="faq-answer">
+                    <p>
+                        Visit the Register page, fill in the required details, and
+                        submit the registration form.
+                    </p>
+                </div>
 
             </article>
 
+
+            <!-- FAQ 3 -->
             <article>
 
-                <h3>3. What should I do if I forget my password?</h3>
+                <button type="button" class="faq-question">
+                    3. What should I do if I forget my password?
+                </button>
 
-                <p>
-                    Contact the administrator for assistance in resetting your
-                    password.
-                </p>
+                <div class="faq-answer">
+                    <p>
+                        Contact the administrator for assistance in resetting your
+                        password.
+                    </p>
+                </div>
 
             </article>
 
+
+            <!-- FAQ 4 -->
             <article>
 
-                <h3>4. Where can I find upcoming events?</h3>
+                <button type="button" class="faq-question">
+                    4. Where can I find upcoming events?
+                </button>
 
-                <p>
-                    Visit the Events page to view all upcoming college activities.
-                </p>
+                <div class="faq-answer" style="display: none;">
+                    <p>
+                        Visit the Events page to view all upcoming college activities.
+                    </p>
+                </div>
 
             </article>
 
         </section>
+
 
         <aside>
 
@@ -117,6 +151,11 @@
         <p>&copy; 2026 StudentHub. All Rights Reserved.</p>
 
     </footer>
+
+    <!-- JavaScript for Collapsible FAQ -->
+    <script src="../Assets/JS/faq.js"></script>
+    <script src="../Assets/JS/menu.js"></script>
+    <script src="../Assets/JS/theme.js"></script>
 
 </body>
 

@@ -22,29 +22,38 @@
 
     </header>
 
-    <nav aria-label="Main Navigation">
+    <button type="button"
+        id="menuButton"
+        class="menu-button"
+        aria-label="Open navigation menu">
+    ☰
+</button>
 
-        <h2>Navigation</h2>
+<nav id="mainNav" aria-label="Main Navigation">
 
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="register.html">Register</a></li>
-            <li><a href="login.html">Login</a></li>
-            <li><a href="dashboard.html">Dashboard</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="profile.html">Profile</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="admin.html">Admin</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="feedback.html">Feedback</a></li>
-        </ul>
+    <h2>Navigation</h2>
 
-        <hr>
+    <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="admin.html">Admin</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+    </ul>
 
-    </nav>
+    <hr>
 
+</nav>
     <main>
+        <button type="button" id="themeButton" class="theme-button" aria-label="Toggle dark mode">
+    🌙 Dark Mode
+</button>
 
         <section>
 
@@ -105,7 +114,7 @@
                 </p>
 
                 <p>
-                    <input type="submit" value="Submit Feedback">
+                    <input type="submit" value="Submit Feedback" id="submitBtn">
                     <input type="reset" value="Clear Form">
                 </p>
 
@@ -135,6 +144,9 @@
         <p>&copy; 2026 StudentHub. All Rights Reserved.</p>
 
     </footer>
+    <script src="../Assets/JS/feedback.js"></script>
+    <script src="../Assets/JS/menu.js"></script>
+    <script src="../Assets/JS/theme.js"></script>
 
 </body>
 

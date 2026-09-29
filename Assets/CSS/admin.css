@@ -17,7 +17,7 @@ main section ul li {
 /* System Status List / Grid */
 .stats-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: 1fr;
     gap: 12px;
     list-style: none;
     padding-left: 0;
@@ -35,7 +35,7 @@ main section ul li {
 
 /* Aside Notice Box Customization */
 aside h2 {
-    color: #c0392b; /* Urgent red/amber accent for admin warnings */
+    color: #c0392b; /* Urgent red for admin warnings */
 }
 
 aside {

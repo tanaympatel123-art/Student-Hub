@@ -1,5 +1,3 @@
-
-
 /* FAQ Question Cards (<article>) */
 article {
     background-color: #f8f9fa;
@@ -29,4 +27,7 @@ aside ul li {
 
 aside ul li a {
     font-weight: bold;
+}
+.faq-answer {
+    display: none;
 }

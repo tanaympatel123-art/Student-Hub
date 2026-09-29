@@ -13,33 +13,49 @@
 
 <body>
 
-    <header>
-        <h1>StudentHub</h1>
-        <p><strong>Your Complete Student Portal</strong></p>
+    <header class="page-header">
+        <!-- Added inline background-image to test if path resolves -->
+         <div class="header-content">
+                <img src="Assets/Images/logo.png" alt="StudentHub Logo" class="header-icon">
+                <h1>StudentHub</h1>
+                <p><strong>Your Complete Student Portal</strong></p>
+            </div>
         <hr>
     </header>
 
-    <nav aria-label="Main Navigation">
-        <h2>Navigation</h2>
+     <button type="button"
+        id="menuButton"
+        class="menu-button"
+        aria-label="Open navigation menu">
+    ☰
+</button>
 
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="pages/about.html">About</a></li>
-            <li><a href="pages/register.html">Register</a></li>
-            <li><a href="pages/login.html">Login</a></li>
-            <li><a href="pages/dashboard.html">Dashboard</a></li>
-            <li><a href="pages/events.html">Events</a></li>
-            <li><a href="pages/profile.html">Profile</a></li>
-            <li><a href="pages/contact.html">Contact</a></li>
-            <li><a href="pages/admin.html">Admin</a></li>
-            <li><a href="pages/faq.html">FAQ</a></li>
-            <li><a href="pages/feedback.html">Feedback</a></li>
-        </ul>
+<nav id="mainNav" aria-label="Main Navigation">
 
-        <hr>
-    </nav>
+    <h2>Navigation</h2>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Pages/about.html">About</a></li>
+        <li><a href="Pages/register.html">Register</a></li>
+        <li><a href="Pages/login.html">Login</a></li>
+        <li><a href="Pages/dashboard.html">Dashboard</a></li>
+        <li><a href="Pages/events.html">Events</a></li>
+        <li><a href="Pages/profile.html">Profile</a></li>
+        <li><a href="Pages/contact.html">Contact</a></li>
+        <li><a href="Pages/admin.html">Admin</a></li>
+        <li><a href="Pagesfaq.html">FAQ</a></li>
+        <li><a href="Pages/feedback.html">Feedback</a></li>
+    </ul>
+
+    <hr>
+
+</nav>
 
     <main>
+        <button type="button" id="themeButton" class="theme-button" aria-label="Toggle dark mode">
+    🌙 Dark Mode
+</button>
 
         <section>
 
@@ -136,6 +152,8 @@
         <p>&copy; 2026 StudentHub. All Rights Reserved.</p>
 
     </footer>
+    <script src="Assets/JS/menu.js"></script>
+    <script src="Assets/JS/theme.js"></script>
 
 </body>
 

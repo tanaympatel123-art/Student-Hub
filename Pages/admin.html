@@ -4,111 +4,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="StudentHub Admin Panel">
-    <meta name="author" content="Patel Tanay.">
-    <link rel="stylesheet" href="../Assets/CSS/global.css">
-    <link rel="stylesheet" href="../Assets/CSS/admin.css">
+    <meta name="description" content="StudentHub Administrator Management and Monitoring Panel">
+    <meta name="author" content="Patel Tanay">
     <title>StudentHub | Admin</title>
+
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/admin.css">
 </head>
 
 <body>
 
-    <header>
-
-        <h1>StudentHub</h1>
-        <p><strong>Administrator Panel</strong></p>
-
-        <hr>
-
+    <header class="site-header">
+        <div class="brand">
+            <span class="logo">StudentHub</span>
+            <p class="tagline">Administrator Operations Portal</p>
+        </div>
     </header>
 
-    <nav aria-label="Main Navigation">
-       
-        <h2>Navigation</h2>
+   <button type="button"
+        id="menuButton"
+        class="menu-button"
+        aria-label="Open navigation menu">
+    ☰
+</button>
 
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="register.html">Register</a></li>
-            <li><a href="login.html">Login</a></li>
-            <li><a href="dashboard.html">Dashboard</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="profile.html">Profile</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="admin.html">Admin</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="feedback.html">Feedback</a></li>
-        </ul>
+<nav id="mainNav" aria-label="Main Navigation">
 
-        <hr>
+    <h2>Navigation</h2>
 
-    </nav>
+    <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="admin.html">Admin</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+    </ul>
 
-    <main>
+    <hr>
 
-        <section>
+</nav>
 
-            <h2>Administrator Dashboard</h2>
+    <main id="main-content">
+        <button type="button" id="themeButton" class="theme-button" aria-label="Toggle dark mode">
+    🌙 Dark Mode
+</button>
 
+        <section class="page-intro">
+            <h1>Administrator Dashboard</h1>
             <p>
-                This page provides an overview of the administrative functions
-                available in the StudentHub portal.
+                Manage user permissions, review incoming student registrations, 
+                and monitor real-time system metrics.
             </p>
-
         </section>
 
-        <section>
-
-            <h2>Administrative Tasks</h2>
-
-            <ul>
-                <li>Manage student accounts.</li>
-                <li>Approve new registrations.</li>
-                <li>Update college announcements.</li>
-                <li>Create and manage events.</li>
-                <li>Review student feedback.</li>
-                <li>Maintain portal information.</li>
-            </ul>
-
+        <!-- Dynamic System Metric Counters -->
+        <section id="system-status" aria-labelledby="status-heading">
+            <h2 id="status-heading">System Status</h2>
+            <div class="stats-grid">
+                <article class="stat-card">
+                    <h3 class="stat-title">Total Students</h3>
+                    <p class="stat-value" id="total-students">1,420</p>
+                </article>
+                <article class="stat-card">
+                    <h3 class="stat-title">Active Users</h3>
+                    <p class="stat-value" id="active-users">312</p>
+                </article>
+                <article class="stat-card">
+                    <h3 class="stat-title">Pending Approvals</h3>
+                    <p class="stat-value" id="pending-approvals">18</p>
+                </article>
+                <article class="stat-card">
+                    <h3 class="stat-title">Pending Feedback</h3>
+                    <p class="stat-value" id="pending-feedback">7</p>
+                </article>
+            </div>
         </section>
 
-        <section>
-
-            <h2>System Status</h2>
-
-            <ul>
-                <li>Total Registered Students</li>
-                <li>Active Users</li>
-                <li>Upcoming Events</li>
-                <li>Pending Feedback</li>
-                <li>Latest Announcements</li>
-            </ul>
-
+        <!-- Actionable Administrative Quick Actions -->
+        <section id="admin-actions" aria-labelledby="actions-heading">
+            <h2 id="actions-heading">Quick Management Actions</h2>
+            <div class="action-buttons">
+                <button type="button" class="btn btn-primary" id="btn-add-notice">Create Announcement</button>
+                <button type="button" class="btn btn-secondary" id="btn-add-event">Publish Event</button>
+                <button type="button" class="btn btn-outline" id="btn-export-logs">Export Audit Logs</button>
+            </div>
         </section>
 
-        <aside>
+        <!-- Core Table for DOM and Data Management -->
+        <section id="pending-registrations" aria-labelledby="registrations-heading">
+            <h2 id="registrations-heading">Pending Student Registrations</h2>
+            <div class="table-container">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Student ID</th>
+                            <th scope="col">Full Name</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Department</th>
+                            <th scope="col">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="student-table-body">
+                        <tr>
+                            <td>STU-2026-081</td>
+                            <td>Aarav Sharma</td>
+                            <td>aarav.sharma@example.com</td>
+                            <td>Computer Engineering</td>
+                            <td>
+                                <button type="button" class="btn-sm btn-approve" data-id="STU-2026-081">Approve</button>
+                                <button type="button" class="btn-sm btn-reject" data-id="STU-2026-081">Reject</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>STU-2026-082</td>
+                            <td>Ananya Verma</td>
+                            <td>ananya.verma@example.com</td>
+                            <td>Information Technology</td>
+                            <td>
+                                <button type="button" class="btn-sm btn-approve" data-id="STU-2026-082">Approve</button>
+                                <button type="button" class="btn-sm btn-reject" data-id="STU-2026-082">Reject</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
 
-            <h2>Administrator Notice</h2>
-
-            <ul>
-                <li>Verify student details before approval.</li>
-                <li>Update announcements regularly.</li>
-                <li>Monitor portal activity.</li>
-                <li>Respond to student feedback promptly.</li>
+        <!-- Administrative Sidebar Notice -->
+        <aside class="admin-notice" aria-label="Administrator Guidelines">
+            <h2>Operational Guidelines</h2>
+            <ul class="styled-list">
+                <li>Verify enrollment numbers with the registrar registry before account approval.</li>
+                <li>Archive outdated announcements every Monday morning.</li>
+                <li>Monitor automated system error alerts and unresolved support tickets.</li>
             </ul>
-
         </aside>
 
     </main>
 
-    <hr>
-
-    <footer>
-
+    <footer class="site-footer">
         <p>&copy; 2026 StudentHub. All Rights Reserved.</p>
-
     </footer>
 
+    <script src="../assets/js/main.js" defer></script>
+    <script src="../assets/js/admin.js" defer></script>
+    <script src="../Assets/JS/menu.js"></script>
+    <script src="../Assets/JS/theme.js"></script>
 </body>
 
 </html>

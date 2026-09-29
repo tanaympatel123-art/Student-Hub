@@ -1,47 +1,100 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta name="description" content="StudentHub Events">
+
     <meta name="author" content="Patel Tanay.">
+
     <link rel="stylesheet" href="../Assets/CSS/global.css">
+
     <link rel="stylesheet" href="../Assets/CSS/events.css">
+
     <title>StudentHub | Events</title>
+
 </head>
+
 
 <body>
 
+
     <header>
+
         <h1>StudentHub</h1>
+
         <p><strong>College Events</strong></p>
+
         <hr>
+
     </header>
 
-    <nav aria-label="Main Navigation">
 
-        <h2>Navigation</h2>
+    <button
+    type="button"
+    id="menuButton"
+    class="menu-button"
+    aria-label="Open navigation menu">
 
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="register.html">Register</a></li>
-            <li><a href="login.html">Login</a></li>
-            <li><a href="dashboard.html">Dashboard</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="profile.html">Profile</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="admin.html">Admin</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="feedback.html">Feedback</a></li>
-        </ul>
+    ☰
 
-        <hr>
+</button>
 
-    </nav>
+
+<nav id="mainNav" aria-label="Main Navigation">
+
+    <h2>Navigation</h2>
+
+    <ul>
+
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="admin.html">Admin</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+
+    </ul>
+
+    <hr>
+
+</nav>
+
 
     <main>
+        <button type="button" id="themeButton" class="theme-button" aria-label="Toggle dark mode">
+    🌙 Dark Mode
+</button>
+
+        <!-- Notification Banner -->
+
+<div id="notificationBanner" class="notification-banner">
+
+    <p>
+        <strong>New Event:</strong>
+        Technical Workshop is coming up on 10 August 2026.
+    </p>
+
+    <button
+        type="button"
+        id="closeNotification"
+        aria-label="Close notification">
+
+        &times;
+
+    </button>
+
+</div>
 
         <section>
 
@@ -54,70 +107,226 @@
 
         </section>
 
+
+        <!-- Image Slider -->
+
+        <section class="event-slider-section">
+
+            <h2>Featured Events</h2>
+
+            <div class="event-slider">
+
+                <button
+                    type="button"
+                    id="prevSlide"
+                    class="slider-button"
+                    aria-label="Previous event">
+
+               &#8592;
+                </button>
+
+
+                <div class="slide-content">
+
+                    <img
+                        id="sliderImage"
+                        src="../Assets/Images/Events/technical-workshop.jpg"
+                        alt="Technical Workshop">
+
+                    <h3 id="sliderTitle">
+                        Technical Workshop
+                    </h3>
+
+                    <p id="sliderDescription">
+                        A technical workshop for students to learn
+                        new technologies and practical skills.
+                    </p>
+
+                </div>
+
+
+                <button
+                    type="button"
+                    id="nextSlide"
+                    class="slider-button"
+                    aria-label="Next event">
+
+                    &#10230;
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- Event List -->
+
         <section>
 
             <h2>Event List</h2>
+
+
+            <!-- Technical Workshop -->
 
             <article>
 
                 <h3>Technical Workshop</h3>
 
-                <ul>
-                    <li>Date: 10 August 2026</li>
-                    <li>Venue: Seminar Hall</li>
-                    <li>Category: Technical</li>
-                </ul>
+                <button
+                    type="button"
+                    class="view-details"
+                    data-title="Technical Workshop"
+                    data-date="10 August 2026"
+                    data-venue="Seminar Hall"
+                    data-category="Technical">
+
+                    View Details
+
+                </button>
 
             </article>
+
+
+            <!-- Sports Day -->
 
             <article>
 
                 <h3>Sports Day</h3>
 
-                <ul>
-                    <li>Date: 18 August 2026</li>
-                    <li>Venue: College Ground</li>
-                    <li>Category: Sports</li>
-                </ul>
+                <button
+                    type="button"
+                    class="view-details"
+                    data-title="Sports Day"
+                    data-date="18 August 2026"
+                    data-venue="College Ground"
+                    data-category="Sports">
+
+                    View Details
+
+                </button>
 
             </article>
+
+
+            <!-- Cultural Fest -->
 
             <article>
 
                 <h3>Cultural Fest</h3>
 
-                <ul>
-                    <li>Date: 25 August 2026</li>
-                    <li>Venue: Auditorium</li>
-                    <li>Category: Cultural</li>
-                </ul>
+                <button
+                    type="button"
+                    class="view-details"
+                    data-title="Cultural Fest"
+                    data-date="25 August 2026"
+                    data-venue="Auditorium"
+                    data-category="Cultural">
+
+                    View Details
+
+                </button>
 
             </article>
 
         </section>
+
+
+        <!-- Event Guidelines -->
 
         <aside>
 
             <h2>Event Guidelines</h2>
 
             <ul>
+
                 <li>Register before the deadline.</li>
+
                 <li>Carry your student ID card.</li>
+
                 <li>Reach the venue on time.</li>
+
                 <li>Follow college rules during the event.</li>
+
             </ul>
 
         </aside>
 
+
     </main>
 
+
+    <!-- Event Modal -->
+
+    <div id="eventModal" class="modal">
+
+        <div class="modal-content">
+
+            <button
+                type="button"
+                id="closeModal"
+                class="close-modal"
+                aria-label="Close modal">
+
+                &times;
+
+            </button>
+
+
+            <h2 id="modalTitle"></h2>
+
+
+            <p>
+
+                <strong>Date:</strong>
+
+                <span id="modalDate"></span>
+
+            </p>
+
+
+            <p>
+
+                <strong>Venue:</strong>
+
+                <span id="modalVenue"></span>
+
+            </p>
+
+
+            <p>
+
+                <strong>Category:</strong>
+
+                <span id="modalCategory"></span>
+
+            </p>
+
+        </div>
+
+    </div>
+
+
     <hr>
+
 
     <footer>
 
         <p>&copy; 2026 StudentHub. All Rights Reserved.</p>
 
     </footer>
+
+
+    <!-- JavaScript -->
+
+    <script src="../Assets/JS/modal.js"></script>
+
+    <script src="../Assets/JS/slider.js"></script>
+
+    <script src="../Assets/JS/notification.js"></script>
+
+    <script src="../Assets/JS/menu.js"></script>
+<script src="../Assets/JS/theme.js"></script>
 
 </body>
 
